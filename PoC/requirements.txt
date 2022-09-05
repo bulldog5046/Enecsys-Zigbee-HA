@@ -1,0 +1,4 @@
+zigpy==0.50.2
+zigpy-cli==0.0.1
+zigpy-deconz==0.18.0
+zigpy-znp==0.8.2
