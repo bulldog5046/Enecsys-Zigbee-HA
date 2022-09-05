@@ -115,7 +115,7 @@ Initial PoC code has been published [here](PoC/__main__.py). This uses the exist
 
 The PoC uses the callback function from the handle_message event to pass all messages and read out the ones of interest. This does mean there are errors logged for unhandled messages from Zigpy but we just extract and process the data ourselves as they require no response from a Zigbee point of view.
 
-Data is saved out in JSON format to telemery.json
+Data is saved out in JSON format to telemery.json and updated for every telemetry packet received, approx. once per minute.
 
 ```
 {
