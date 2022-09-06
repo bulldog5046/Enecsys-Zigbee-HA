@@ -185,3 +185,11 @@ Data is saved out in JSON format to telemery.json and updated for every telemetr
     }
 }
 ```
+
+## Home Assistant Inegration
+
+Sadly, we can't just add the inverters as stanard zigbee devices into Home Assistant.
+
+The next best option was to use what we've learned here to create a docker based Virtual Enecsys Gateway that can either be ran on the Home Assistant device or elsewhere if preferred.
+
+This respository is focused on the reverse engineering aspect. You can find the Enecsys Virtual Gateway in [this repository](https://github.com/bulldog5046/Enecsys-vgw)
