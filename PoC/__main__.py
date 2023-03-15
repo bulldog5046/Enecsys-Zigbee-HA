@@ -35,7 +35,7 @@ class MainListener:
     def handle_message(self, sender, profile, cluster, src_ep, dst_ep, message):
         ## Custom handling of Enecsys messages
         ## Catch and response to the initial message after joining to start telemetry flow
-        if b'\x02\x01\x0A\x00\x00\x00'in message:
+        if b'\x57\x01' in message and b'\x02\x01'in message:
             asyncio.create_task(ControllerApplication.request(self.application, sender, profile, cluster, src_ep, dst_ep, 180, b'\x57\x01\x95\xb4\x30\x7a\x00\x9a\xc6\x34\x02\x01\x32\x00\x00\x00\x02\x00\x93',expect_reply=False, use_ieee=False))
             
         ## catch telemetry messages, process and write out to file
