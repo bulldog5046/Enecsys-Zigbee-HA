@@ -14,7 +14,7 @@ Enecsys's implementation of zigbee requires 3 paramenters to match to establish 
 3. Stack Profile = 0x00
 4. Permit Join must always be active
 
-Most Zigbee network parameters are configurable at runtime, however according the Zigbee 3 spec the TC-Link Key can only be set at complilation. It was therefore required to recompile the Z-Stack firmware for the Sonoff Zigbee Dongle Plus I was using. [Z-Stack 3.x.0 recompiled](firmware/znp_CC1352P_2_LAUNCHXL_tirtos_ccs.hex)
+Most Zigbee network parameters are configurable at runtime, however according the Zigbee 3 spec the TC-Link Key can only be set at complilation. It was therefore required to recompile the Z-Stack firmware for the Sonoff Zigbee Dongle Plus I (Also known as model 'P') was using. [Z-Stack 3.x.0 recompiled](firmware/znp_CC1352P_2_LAUNCHXL_tirtos_ccs.hex)
 
 The PAN id and Stack Profile can be configred either in Zigpy configuration before the network is formed or by modifying the NVRAM with Zigpy_ZNP.Tools after the network has been formed.
 
